@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-
+namespace DataStructuresTesting
+{
     public class Queue
     {
         public Node front;
@@ -19,7 +20,7 @@ using System.Text;
             Node desNode = new Node(n);
             //Node temp;
 
-            if(front == null && back == null)
+            if (front == null && back == null)
             {
                 front = desNode;
                 back = desNode;
@@ -37,7 +38,7 @@ using System.Text;
 
         public void Dequeue()
         {
-            if(front == null)
+            if (front == null)
             {
                 Console.WriteLine("Queue is currently already empty");
                 return;
@@ -54,7 +55,7 @@ using System.Text;
 
         public int Peek()
         {
-            if(front == null)
+            if (front == null)
             {
                 return 0;
             }
@@ -63,7 +64,7 @@ using System.Text;
 
         public void Display()
         {
-            if(front == null || back == null)
+            if (front == null || back == null)
             {
                 Console.WriteLine("Queue is Empty");
                 return;
@@ -71,7 +72,7 @@ using System.Text;
 
             Node curr = front;
 
-            while(curr != null)
+            while (curr != null)
             {
                 Console.Write(curr.data + " ");
                 curr = curr.next;
@@ -79,3 +80,4 @@ using System.Text;
         }
     }
 
+}

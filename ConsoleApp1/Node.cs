@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-
+namespace DataStructuresTesting
+{
     public class Node
     {
         public int data;
@@ -21,3 +22,4 @@ using System.Text;
         }
     }
 
+}

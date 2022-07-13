@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-
+namespace DataStructuresTesting
+{
     public class Stack
     {
-        Node top;
+        private Node top;
 
         public Stack()
         {
@@ -16,7 +17,7 @@ using System.Text;
         {
             Node temp;
 
-            if(top == null)
+            if (top == null)
             {
                 top = new Node(n);
                 return;
@@ -31,7 +32,7 @@ using System.Text;
         {
             Node temp;
 
-            if(top == null)
+            if (top == null)
             {
                 Console.WriteLine("Stack is empty");
                 return null;
@@ -44,8 +45,8 @@ using System.Text;
         }
         public int Peek()
         {
-            if(top == null)
-            return 0;
+            if (top == null)
+                return -1;
 
             return top.data;
         }
@@ -61,7 +62,7 @@ using System.Text;
             }
 
             curr = top;
-            while(curr != null)
+            while (curr != null)
             {
                 Console.WriteLine(curr.data);
                 curr = curr.next;
@@ -72,3 +73,4 @@ using System.Text;
         }
     }
 
+}
