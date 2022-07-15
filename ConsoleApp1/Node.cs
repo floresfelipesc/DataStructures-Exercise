@@ -8,6 +8,7 @@ namespace DataStructuresTesting
     {
         public int data;
         public Node next;
+       
 
         public Node()
         {
